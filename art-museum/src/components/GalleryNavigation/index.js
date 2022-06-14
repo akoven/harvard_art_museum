@@ -11,7 +11,7 @@ const GalleryNavigation = ({galleries}) => {
                 {galleries.map(gallery => {
                     return(
                         <nav>
-                            <NavLink key={gallery.id} to={`/galleries/${gallery.id}`}>{gallery.name}</NavLink>
+                            <NavLink activeStyle={{ fontWeight: "bold" }} key={gallery.id} to={`/galleries/${gallery.id}`}>{gallery.name}</NavLink>
                         </nav>
                     )
                 })}
